@@ -181,6 +181,9 @@ body{
 /* breakpoint mobile */
 
 @media only screen and (max-width:739px){
+    body{
+        background-size: cover;
+    }
     /* Header */
     .menu-logo{
         width: 290px;
