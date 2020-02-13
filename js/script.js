@@ -16,7 +16,7 @@ function consulta() {
     key_api = "cbd4e92d";
 
     //Requisição na API
-    var api_url = "https://api.hgbrasil.com/weather?format=json-cors&key="+key_api+"&city_name="+cidade;
+    var api_url = "https://api.hgbrasil.com/weather?format=json&key="+key_api+"&city_name="+cidade;
     $.ajax({
         url: api_url,
         crossDomain: true,
