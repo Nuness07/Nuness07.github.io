@@ -131,7 +131,7 @@ body{
 .info{
     background:rgb(184, 184, 184, 0.20);
     padding:30px;
-    margin:40px 0 150px 0;
+    margin:40px 0;
     color: #fff;
 }
 
@@ -221,9 +221,5 @@ body{
     /* Informações Climaticas */
     #estado-sel{
         font-size:30px;
-    }
-
-    .info{
-        margin:40px 0 190px 0;
     }
 }
