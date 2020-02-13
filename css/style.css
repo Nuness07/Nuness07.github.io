@@ -1,0 +1,226 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+/**
+ * Remove anchor tex-decoration
+ */ 
+
+ a {
+	text-decoration: none;
+}
+
+/**
+ * Remove list-style
+ */ 
+
+ol, ul {
+	list-style: none;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+/* --------- FIM RESET ---------- */
+
+/* Estilos Gerais */
+body{
+    background: url(../img/bg.png) no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.menu{
+    background-color: rgb(184, 184, 184, 0.37);
+    height: 80px;
+}
+
+.menu-logo{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* main */
+
+.intro{
+    padding: 80px 0;
+}
+.intro h1{
+    font-size: 54px;
+    line-height: 66px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+}
+
+.intro h1:after{
+    content: '';
+    display: block;
+    width: 140px;
+    height: 3px;
+    background-color: #fff;
+    margin: 40px auto;
+}
+
+/* Consultas */
+
+.consulta-info p{
+    text-align: right;
+    font-size: 28px;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.form-cidade label{
+    display: none;
+}
+
+.form-cidade select{
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    width: 260px;
+    height: 60px;
+    font-size: 20px;
+    display: block;
+}
+
+.form-cidade select:hover{
+    cursor: pointer;
+}
+
+.consultar-btn{
+    padding: 15px 0;
+    border: none;
+    background-color: #fff;
+    border-radius: 30px ;
+    width: 300px;
+    margin-top: 80px;
+    left: -160px;
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.consultar-btn:hover{
+    background-color: rgb(184, 184, 184, 0.37);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Informações climaticas */
+#invisivel{
+    display: none;
+}
+
+.info{
+    background:rgb(184, 184, 184, 0.20);
+    padding:30px;
+    margin:40px 0 150px 0;
+    color: #fff;
+}
+
+#estado-sel{
+    font-size:48px;
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+#dia{
+    font-size: 26px;
+    text-align: center;
+}
+
+#cond{
+    font-size: 26px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#cond::after, #cond::before{
+    content: '';
+    display: block;
+    width: 140px;
+    height: 3px;
+    background-color: #fff;
+    margin: 20px auto;
+}
+
+.inf-tempo{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.inf-tempo h2{
+    font-size: 24px;
+}
+
+.inf-tempo p{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/* breakpoint mobile */
+
+@media only screen and (max-width:739px){
+    /* Header */
+    .menu-logo{
+        width: 290px;
+        margin: 0 auto;
+    }
+
+    /* Intro */
+    .intro{
+        padding: 40px 0 20px 0;
+    }
+
+    .intro h1{
+        font-size: 48px;
+    }
+
+    .intro h1:after{
+        margin: 20px auto;
+    }
+
+    /* Consulta */
+    .consulta-info p{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .form-cidade select{
+        width: 300px;
+    }
+
+    .consultar-btn{
+        left: 0;
+        margin: 20px 0;
+    }
+
+    /* Informações Climaticas */
+    #estado-sel{
+        font-size:30px;
+    }
+
+    .info{
+        margin:40px 0 190px 0;
+    }
+}
