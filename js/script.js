@@ -13,12 +13,11 @@ function consulta() {
     optei por fazer com city_name*/
     cidade = text;
     // Substituir chave caso essa bloqueie
-    key_api = "cbd4e92d";
+    key_api = "aa8fff39";
 
     //Requisição na API
     var api_url = "https://api.hgbrasil.com/weather?format=json-cors&key="+key_api+"&city_name="+cidade;
     $.ajax({
-        headers:{'Access-Control-Allow-Origin': '*'},
         url: api_url,
         crossDomain: true,
         dataType: 'json',
