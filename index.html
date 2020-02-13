@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tempolândia</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Consulte o clima atual na sua cidade!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="og:type" content="website"/>
+    <meta name="og:title" content="Tempolandia - Consulte o clima de sua capital"/>
+    <meta name="og:description" content="Consulte o clima da capital do seu estado para ver se vai precisar sair com guarda-chuva!"/>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" text="type/css" href="css/grid.css">
+    <link rel="stylesheet" text="type/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+        <!-- Inicio Header -->
+        <header class="menu">
+            <div class="container">
+                <a href="#" class="menu-logo"><img src="img/logo.svg" alt="logo-tempolandia"></a>
+            </div>
+        </header>
+        <!-- Fim Header -->
+
+        <!-- Inicio Intro -->
+        <main class="container intro">
+            <h1>Consulte o clima atual<br> na capital de seu estado!</h1>
+        </main>
+        <!-- Fim Intro -->
+
+        <!-- Inicio Consulta -->
+        <section class="container">
+            <div class="grid-6 consulta-info">
+                <p>Selecione a capital:</p>
+            </div>
+            <div class="grid-6">
+                <form class="form-cidade" action="js/script.js">
+                    <label for="estado">Estado</label>
+                    <select id="estado" name="estado">
+                        <option value="ac" selected>Rio Branco/AC</option>
+                        <option value="al">Maceió/AL</option>
+                        <option value="ap">Macapá/AP</option>
+                        <option value="am">Manaus/AM</option>
+                        <option value="ba">Salvador/BA</option>
+                        <option value="ce">Fortaleza/CE</option>
+                        <option value="df">Brasília/DF</option>
+                        <option value="es">Vitória/ES</option>
+                        <option value="go">Goiânia/GO</option>
+                        <option value="ma">São Luís/MA</option>
+                        <option value="mt">Cuiabá/MT</option>
+                        <option value="ms">Campo Grande/MS</option>
+                        <option value="mg">Belo Horizonte/MG</option>
+                        <option value="pa">Belém/PA</option>
+                        <option value="pb">João Pessoa/PB</option>
+                        <option value="pr">Curitiba/PR</option>
+                        <option value="pe">Recife/PE</option>
+                        <option value="pi">Teresina/PI</option>
+                        <option value="rj">Rio de Janeiro/RJ</option>
+                        <option value="rn">Natal/RN</option>
+                        <option value="rs">Porto Alegre/RS</option>
+                        <option value="ro">Porto Velho/RO</option>
+                        <option value="rr">Boa Vista/RR</option>
+                        <option value="sc">Florianópolis/SC</option>
+                        <option value="sp">São Paulo/SP</option>
+                        <option value="se">Aracaju/SE</option>
+                        <option value="to">Palmas/TO</option>
+                    </select>
+
+                    <input type="button" value="Consultar" class="consultar-btn" onclick="consulta();tornarVisivel()">
+                </form>
+            </div>
+        </section>
+        <!-- FIm Consulta -->
+
+        <!-- Inicio Informações Climáticas -->
+        <section id="invisivel" class="container">
+            <div class="info grid-16">
+                <p id="estado-sel"></p>
+                <p id="dia"></p>
+                <p id="cond"></p>
+                <div class="inf-tempo">
+                    <img src="img/temp.svg" alt="icone-temperatura">
+                    <h2>Temperatura</h2>
+                    <p id="temp"></p>
+                    <img src="img/umid.svg" alt="icone-umidade">
+                    <h2>Umidade do ar:</h2>
+                    <p id="umidade"></p>
+                    <img src="img/tempm.svg" alt="icone-temperaturamáxima">
+                    <h2>Temperatura Máxima:</h2>
+                    <p id="tempm"></p>
+                    <img src="img/templ.svg" alt="icone-temperaturaminima">
+                    <h2>Temperatura Mínima</h2>
+                    <p id="templ"></p>
+                </div>
+            </div>
+        </section>
+        <!-- FIm Informações climáticas -->
+</body>
+
+</html>
